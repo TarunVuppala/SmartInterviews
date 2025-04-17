@@ -9,16 +9,18 @@
 
 <body>
     <ul>
-        <li id="list">item1</li>
-        <li id="list">item2</li>
-        <li id="list">item3</li>
-        <li id="list">item4</li>
-        <li id="list">item5</li>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
     </ul>
 </body>
 
 <script>
-    const list = document.querySelectorAll("#list");
+    const list = document.querySelectorAll("li");
+    console.log(list);
+    
     list.forEach((li, idx) => {
         console.log(li.textContent);
 
@@ -27,7 +29,7 @@
         }
     });
     console.log(`Total items : ${list.length}`);
-    console.log(document.querySelectorAll("#list"));
+    console.log(document.querySelectorAll("li"));
 </script>
 
 </html>
