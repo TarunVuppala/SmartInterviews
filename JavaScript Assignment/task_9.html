@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 9</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            margin-top: -50px;
+            padding: 32px 0;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .counter-value {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #increment {
+            background-color: #4CAF50;
+        }
+
+        #decrement {
+            background-color: #f44336;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <p class="counter-value" id="counter">0</p>
+        <p id="err" class="error"></p>
+        <div>
+            <button id="increment" class="btn">Increment</button>
+            <button id="decrement" class="btn">Decrement</button>
+        </div>
+    </div>
+</body>
+
+</html>
