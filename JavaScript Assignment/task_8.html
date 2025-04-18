@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        li {
+            cursor: pointer;
+            list-style: square;
+        }
+    </style>
+    <title>Task 8</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>My List</h1>
+        <button id="addButton">Add Item</button>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    document.addEventListener('click', (e) => {
+        if (e.target.tagName === 'LI') {
+            e.target.remove();
+        }
+    })
+    document.getElementById('addButton').addEventListener('click', () => {
+        const li = document.createElement('li');
+        li.textContent = "New Item";
+        document.querySelector('ul').appendChild(li);
+    })
+</script>
+
+</html>
