@@ -80,4 +80,28 @@
     </div>
 </body>
 
+<script>
+    let counter = 0;
+    const counterElement = document.getElementById('counter');
+    const errorElement = document.getElementById('err');
+    const incrementBtn = document.getElementById('increment');
+    const decrementBtn = document.getElementById('decrement');
+
+    incrementBtn.addEventListener('click', () => {
+        counter++;
+        errorElement.textContent = '';
+        counterElement.textContent = counter;
+    });
+
+    decrementBtn.addEventListener('click', () => {
+        if (counter > 0) {
+            counter--;
+            errorElement.textContent = '';
+        } else {
+            errorElement.textContent = "(Cannot decrement below 0)";
+        }
+        counterElement.textContent = counter;
+    });
+</script>
+
 </html>
