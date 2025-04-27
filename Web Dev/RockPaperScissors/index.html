@@ -17,7 +17,7 @@
 
         .container {
             background: #fff;
-            padding: 40px 50px;
+            padding: 20px 40px;
             border-radius: 12px;
             text-align: center;
             width: 400px;
@@ -84,6 +84,22 @@
             flex-direction: row;
             margin-top: 10px;
         }
+
+        #resetBtn {
+            margin-top: 30px;
+            margin-bottom: 5px;
+            background: #e63946;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        #resetBtn:hover {
+            background: #d62828;
+        }
     </style>
     <title>Rock Paper Scissors</title>
 </head>
@@ -103,6 +119,7 @@
                 <p>Computer: <span id="computerScore">0</span></p>
             </div>
         </div>
+        <button id="resetBtn" onclick="resetGame()">Reset Game</button>
     </div>
 </body>
 <script>
@@ -136,6 +153,15 @@
 
         yourScoreEl.textContent = yourScore;
         computerScoreEl.textContent = computerScore;
+    }
+
+    function resetGame() {
+        yourScore = 0;
+        computerScore = 0;
+        yourScoreEl.textContent = yourScore;
+        computerScoreEl.textContent = computerScore;
+        winEl.textContent = 'Winner of each round will appear here.';
+        winEl.style.color = '#333';
     }
 </script>
 
