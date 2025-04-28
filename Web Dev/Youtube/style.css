@@ -147,3 +147,25 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 5px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 200;
+}
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.profile-container:hover .tooltip,
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip {
+    opacity: 1;
+}
