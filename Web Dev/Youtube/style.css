@@ -169,3 +169,43 @@ body {
 .voice-search-button:hover .tooltip {
     opacity: 1;
 }
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 56px;
+    width: 72px;
+    background-color: #0f0f0f;
+    z-index: 90;
+    padding-top: 5px;
+    overflow-y: auto;
+}
+.sidebar-link {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #aaa;
+}
+.sidebar-link:hover {
+    background-color: #272727;
+}
+.sidebar-link.active {
+    color: #fff;
+}
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 6px;
+    filter: invert(70%);
+}
+.sidebar-link.active img {
+    filter: invert(100%);
+}
+.sidebar-link:hover img {
+    filter: invert(100%);
+}
+.sidebar-link div {
+    font-size: 10px;
+}
