@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
 }
+
 body {
     background-color: #0f0f0f;
     color: #fff;
@@ -13,6 +14,7 @@ body {
     height: 100vh;
     overflow-y: scroll;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -27,22 +29,26 @@ body {
     border-bottom: 1px solid #303030;
     z-index: 100;
 }
+
 .left-section {
     display: flex;
     align-items: center;
 }
+
 .hamburger-menu {
     height: 24px;
     margin-right: 24px;
     cursor: pointer;
     filter: invert(100%);
 }
+
 .logo-text {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
 }
+
 .middle-section {
     display: flex;
     align-items: center;
@@ -50,6 +56,7 @@ body {
     margin: 0 35px;
     max-width: 500px;
 }
+
 .search-bar {
     flex: 1;
     height: 40px;
@@ -61,10 +68,12 @@ body {
     color: white;
     width: 0;
 }
+
 .search-bar::placeholder {
     font-size: 16px;
     color: #aaa;
 }
+
 .search-button {
     height: 40px;
     width: 64px;
@@ -78,13 +87,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .search-button:hover {
     background-color: #303030;
 }
+
 .search-icon {
     height: 24px;
     filter: invert(100%);
 }
+
 .voice-search-button {
     height: 40px;
     width: 40px;
@@ -98,13 +110,16 @@ body {
     align-items: center;
     position: relative;
 }
+
 .voice-search-button:hover {
     background-color: #303030;
 }
+
 .voice-search-icon {
     height: 24px;
     filter: invert(100%);
 }
+
 .right-section {
     display: flex;
     align-items: center;
@@ -113,6 +128,7 @@ body {
     margin-right: 20px;
     flex-shrink: 0;
 }
+
 .upload-icon-container,
 .youtube-apps-icon-container,
 .notifications-icon-container,
@@ -125,12 +141,14 @@ body {
     width: 40px;
     cursor: pointer;
 }
+
 .upload-icon,
 .youtube-apps-icon,
 .notifications-icon {
     height: 24px;
     filter: invert(100%);
 }
+
 .notifications-count {
     position: absolute;
     top: 5px;
@@ -141,12 +159,14 @@ body {
     padding: 2px 5px;
     border-radius: 10px;
 }
+
 .current-user-picture {
     height: 32px;
     width: 32px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .tooltip {
     position: absolute;
     bottom: -30px;
@@ -161,6 +181,7 @@ body {
     white-space: nowrap;
     z-index: 200;
 }
+
 .upload-icon-container:hover .tooltip,
 .youtube-apps-icon-container:hover .tooltip,
 .notifications-icon-container:hover .tooltip,
@@ -169,6 +190,7 @@ body {
 .voice-search-button:hover .tooltip {
     opacity: 1;
 }
+
 .sidebar {
     position: fixed;
     left: 0;
@@ -180,6 +202,7 @@ body {
     padding-top: 5px;
     overflow-y: auto;
 }
+
 .sidebar-link {
     height: 74px;
     display: flex;
@@ -189,43 +212,54 @@ body {
     cursor: pointer;
     color: #aaa;
 }
+
 .sidebar-link:hover {
     background-color: #272727;
 }
+
 .sidebar-link.active {
     color: #fff;
 }
+
 .sidebar-link img {
     height: 24px;
     margin-bottom: 6px;
     filter: invert(70%);
 }
+
 .sidebar-link.active img {
     filter: invert(100%);
 }
+
 .sidebar-link:hover img {
     filter: invert(100%);
 }
+
 .sidebar-link div {
     font-size: 10px;
 }
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
     padding: 24px 16px;
 }
+
 .video-preview {
     cursor: pointer;
 }
+
 .thumbnail-row {
     position: relative;
     margin-bottom: 10px;
 }
+
 .thumbnail {
     width: 100%;
     border-radius: 8px;
 }
+
 .video-time {
     position: absolute;
     bottom: 8px;
@@ -237,24 +271,29 @@ body {
     padding: 4px 4px;
     border-radius: 2px;
 }
+
 .video-info-grid {
     display: grid;
     grid-template-columns: 40px 1fr;
     gap: 12px;
 }
+
 .channel-picture {
     vertical-align: top;
 }
+
 .profile-picture {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .video-info {
     display: flex;
     flex-direction: column;
 }
+
 .video-title {
     font-size: 14px;
     font-weight: 500;
@@ -266,11 +305,13 @@ body {
     overflow: hidden;
     color: white;
 }
+
 .video-author {
     font-size: 12px;
     color: #aaa;
     margin-bottom: 4px;
 }
+
 .video-stats {
     font-size: 12px;
     color: #aaa;
