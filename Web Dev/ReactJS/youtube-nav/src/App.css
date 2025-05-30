@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #0f0f0f;
+}
+
+.ytnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 24px;
+  margin-right: 6px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.search-container {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.searchip {
+  width: 500px;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #0f0f0f;
+}
+
+.search-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-left: 1px solid #ccc;
+}
+
+.search-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.mic-btn {
+  margin-left: 12px;
+  background: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mic-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-btn {
+  background: #f0f0f0;
+  border: none;
+  color: #0f0f0f;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.icon-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+}
+
+.icon-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.notif-btn {
+  position: relative;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: black;
+}
